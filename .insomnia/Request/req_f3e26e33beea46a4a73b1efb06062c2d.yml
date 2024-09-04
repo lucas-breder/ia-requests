@@ -1,0 +1,48 @@
+_id: req_f3e26e33beea46a4a73b1efb06062c2d
+type: Request
+parentId: fld_7a9b6d88e67849a2b9521707d6e08e35
+modified: 1725461931987
+created: 1716491835599
+url: http://localhost:9000/2015-03-31/functions/function/invocations
+name: validator_agent
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+      "Records": [
+        {
+          "messageId": "xxx",
+          "receiptHandle": "...",
+          "body": "{\"Type\": \"Notification\", \"MessageId\": \"...\", \"TopicArn\": \"arn:aws:sns:us-east-1:xxx:dev-document-validator\", \"Subject\": \"Message processed successfully: extractor_agent\", \"Message\": \"{\\\"hash_content\\\": \\\"382e84cb491a2d5b138577b6a109b4d442090c76c8f39203e549a9a1f0a2090a\\\", \\\"doc_type\\\": \\\"invoice\\\",  \\\"s3_file\\\": {\\\"bucket_name\\\": \\\"dev-dm-inbound-da9d3754-edd0-4f6b-9065-e4d90521fe16\\\", \\\"file_name\\\": \\\"049b1200-1296-4043-ba6b-62c4551ec643.pdf\\\", \\\"is_scanned\\\": true}, \\\"previous_step\\\": \\\"extractor_agent\\\", \\\"collection_name\\\": \\\"461104218ab1cefcc56b93c8b362ce0db64ecbbab5380e25215a1e25e4cdac45\\\", \\\"file_type\\\": \\\"image\\\", \\\"classifier_agent\\\": {\\\"result\\\": \\\"{\\\\\\\"type_file\\\\\\\": \\\\\\\"invoice\\\\\\\"}\\\", \\\"open_ai_callback\\\": \\\"Tokens Used: 919\\\\n\\\\tPrompt Tokens: 913\\\\n\\\\tCompletion Tokens: 6\\\\nSuccessful Requests: 1\\\\nTotal Cost (USD): $0.0\\\"}, \\\"extractor_agent\\\": {\\\"result\\\": \\\"{\\\\\\\"is_signed\\\\\\\": null, \\\\\\\"is_stamped\\\\\\\": null, \\\\\\\"invoice_number\\\\\\\": \\\\\\\"INV23.00266\\\\\\\", \\\\\\\"delivery_address\\\\\\\": \\\\\\\"IC Import Consultants GmbH\\\\\\\\nHallbergmooser Str. 5 - Third floor 10\\\\\\\\n85445 Oberding/ Schwaig, Germany\\\\\\\", \\\\\\\"shipper\\\\\\\": \\\\\\\"DMS AMERICA LLC\\\\\\\", \\\\\\\"total_value\\\\\\\": \\\\\\\"681,80\\\\\\\", \\\\\\\"purchase_order\\\\\\\": \\\\\\\"4140222880\\\\\\\", \\\\\\\"currency\\\\\\\": \\\\\\\"EUR\\\\\\\", \\\\\\\"freight\\\\\\\": \\\\\\\"A\\\\\\\\u00e9reo\\\\\\\", \\\\\\\"description\\\\\\\": \\\\\\\"Art. BRB106570; SOCAPEX MACHO SOURIAU HE30806T2116SN7M\\\\\\\", \\\\\\\"measurement_units\\\\\\\": \\\\\\\"Kg\\\\\\\", \\\\\\\"quantity_bought\\\\\\\": \\\\\\\"4 un\\\\\\\", \\\\\\\"quantity_shipped\\\\\\\": \\\\\\\"1 un\\\\\\\", \\\\\\\"discount\\\\\\\": \\\\\\\"N\\\\\\\\u00e3o Informado\\\\\\\", \\\\\\\"Manufacturer\\\\\\\": \\\\\\\"SOURIAU SAS\\\\\\\", \\\\\\\"country_of_origin\\\\\\\": \\\\\\\"Fran\\\\\\\\u00e7a\\\\\\\", \\\\\\\"country_of_provenance\\\\\\\": \\\\\\\"Fran\\\\\\\\u00e7a\\\\\\\", \\\\\\\"country_of_acquisition\\\\\\\": \\\\\\\"Brasil\\\\\\\", \\\\\\\"payment_terms\\\\\\\": \\\\\\\"transfer\\\\\\\\u00eancia banc\\\\\\\\u00e1ria aos 45 dias da data de emiss\\\\\\\\u00e3o da fatura\\\\\\\", \\\\\\\"banking_information\\\\\\\": \\\\\\\"Schaffhauser Kantonalbank\\\\\\\\nVordergasse 73\\\\\\\\n8201 Schaffhausen, Switzerland\\\\\\\\nIBAN: CH97 0078 2008 2136 1810 2\\\\\\\\nBIC / SWIFT-Code: SHKBCH2S\\\\\\\", \\\\\\\"gross_weight\\\\\\\": \\\\\\\"0.62\\\\\\\", \\\\\\\"net_weight\\\\\\\": \\\\\\\"0.36\\\\\\\", \\\\\\\"packaging\\\\\\\": \\\\\\\"Cartonagem\\\\\\\", \\\\\\\"others\\\\\\\": \\\\\\\"01 volume(s)\\\\\\\", \\\\\\\"billing_address\\\\\\\": \\\\\\\"IC Import Consultants GmbH\\\\\\\\nSihlbruggstrasse 23\\\\\\\\n8834 Schindellegi, Switzerland\\\\\\\", \\\\\\\"incoterm\\\\\\\": \\\\\\\"FCA\\\\\\\", \\\\\\\"items\\\\\\\": [{\\\\\\\"unit_price\\\\\\\": \\\\\\\"136,36\\\\\\\", \\\\\\\"description\\\\\\\": \\\\\\\"Art. BRB106570; SOCAPEX MACHO SOURIAU HE30806T2116SN7M\\\\\\\", \\\\\\\"item_total_price\\\\\\\": \\\\\\\"545,44\\\\\\\", \\\\\\\"unit_weight\\\\\\\": \\\\\\\"\\\\\\\", \\\\\\\"item_number\\\\\\\": \\\\\\\"1\\\\\\\", \\\\\\\"pieces\\\\\\\": \\\\\\\"4 un\\\\\\\"}, {\\\\\\\"unit_price\\\\\\\": \\\\\\\"136,36\\\\\\\", \\\\\\\"description\\\\\\\": \\\\\\\"Art. BRB106570; SOCAPEX MACHO SOURIAU HE30806T2116SN7M\\\\\\\", \\\\\\\"item_total_price\\\\\\\": \\\\\\\"136,36\\\\\\\", \\\\\\\"unit_weight\\\\\\\": \\\\\\\"\\\\\\\", \\\\\\\"item_number\\\\\\\": \\\\\\\"2\\\\\\\", \\\\\\\"pieces\\\\\\\": \\\\\\\"1 un\\\\\\\"}]}\\\", \\\"open_ai_callback\\\": \\\"Tokens Used: 2514\\\\n\\\\tPrompt Tokens: 2097\\\\n\\\\tCompletion Tokens: 417\\\\nSuccessful Requests: 1\\\\nTotal Cost (USD): $0.0\\\"}}\", \"Timestamp\": \"2024-05-21T22:53:59.494Z\", \"SignatureVersion\": \"1\", \"Signature\": \"KY/OFFYaBlP2Tw5ED5J54T8MSOqFz07bqD9fbxP0QHcKKDxrGN+IqmBTxKx3+CrkRURxU3TLXkn3cBX6fcnLYdC8b8xBe2llpHkSTRfH/i7Eq0AXhTZv6WfS49HwEc1mVALLZt5tAfnCyYwSgok5w/fFF9O7wv+wi4DsMQZQ//A5my7IECp1FVAF0tSIIGedp/KLKtE3wxNe3VLwkVCy0QuNYcNM6X0lDzWmfuTz4Osx/flDt+NfY6jasTJ3GFmsH+bsKI0Q6olwKtVwWCwtNz3nFmhfdLKpbMnz7hB5x5Ocb0C8XxoASFlaTPZQPeXhoYtTttPBDKnfAbsRWAU7zA==\", \"SigningCertURL\": \"https://sns.us-east-1.amazonaws.com/SimpleNotificationService-60eadc530605d63b8e62a523676ef735.pem\", \"UnsubscribeURL\": \"https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:xxxx:dev-document-validator:9a454a0a-a41f-48ca-b0b1-db3309fb8430\"}",
+          "attributes": {
+            "ApproximateReceiveCount": "1",
+            "AWSTraceHeader": "xxx",
+            "SentTimestamp": "xxx",
+            "SenderId": "xxx",
+            "ApproximateFirstReceiveTimestamp": "xxxx"
+          },
+          "messageAttributes": {},
+          "md5OfBody": "xxx",
+          "eventSource": "aws:sqs",
+          "eventSourceARN": "arn:aws:sqs:us-east-1:xxx:dev-document-validator",
+          "awsRegion": "us-east-1"
+        }
+      ]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1725461931938
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

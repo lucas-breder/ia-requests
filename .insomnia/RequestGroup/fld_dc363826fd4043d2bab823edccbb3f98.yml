@@ -1,0 +1,10 @@
+_id: fld_dc363826fd4043d2bab823edccbb3f98
+type: RequestGroup
+parentId: wrk_3b1bc53c44454e4d984c0e6a145131d8
+modified: 1724788201640
+created: 1724788201640
+name: Chatbot
+description: ""
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1724788201640

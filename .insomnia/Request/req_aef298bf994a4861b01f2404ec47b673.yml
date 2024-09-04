@@ -1,0 +1,34 @@
+_id: req_aef298bf994a4861b01f2404ec47b673
+type: Request
+parentId: fld_dc363826fd4043d2bab823edccbb3f98
+modified: 1725370837635
+created: 1723231437589
+url: http://localhost:9000/send-message
+name: chatbot
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {"customer_name": "{{ _.customer_name }}",
+    "message": "{{ _.user_message }}"
+    }
+parameters:
+  - id: pair_06d65afd90364fc5905d17e240529447
+    name: ""
+    value: ""
+    description: ""
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1724788214215
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

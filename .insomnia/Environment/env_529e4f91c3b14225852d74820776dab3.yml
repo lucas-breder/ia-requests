@@ -1,0 +1,16 @@
+_id: env_529e4f91c3b14225852d74820776dab3
+type: Environment
+parentId: env_91582f56378f403c1ef1f78138429af9c88fdbc9
+modified: 1724247663467
+created: 1721224324201
+name: chatbot
+data:
+  user_message: Quando vai chegar a minha próxima carga?
+  customer_name: COLDMIX
+dataPropertyOrder:
+  "&":
+    - user_message
+    - customer_name
+color: null
+isPrivate: false
+metaSortKey: 1721224324202

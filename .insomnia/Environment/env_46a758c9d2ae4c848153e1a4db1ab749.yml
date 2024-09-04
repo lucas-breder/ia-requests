@@ -1,0 +1,16 @@
+_id: env_46a758c9d2ae4c848153e1a4db1ab749
+type: Environment
+parentId: env_91582f56378f403c1ef1f78138429af9c88fdbc9
+modified: 1721089462433
+created: 1719935105613
+name: New Environment
+data:
+  collection_name: teste_elogroup_04_07.pdf//cf9068d2db258bbefdbcf314b5df55c9136a44d72d1badf3c47a885f67255840//transcriber_agent//1721072018.2611544
+  file_name: page_1_f1eb0cf9-cbb9-4010-acc3-3f8526ec2ccc.jpg
+dataPropertyOrder:
+  "&":
+    - collection_name
+    - file_name
+color: null
+isPrivate: false
+metaSortKey: 1719935105613

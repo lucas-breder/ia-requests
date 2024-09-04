@@ -1,0 +1,48 @@
+_id: req_9b000382ad2b4a20b8713748d231f5db
+type: Request
+parentId: fld_7a9b6d88e67849a2b9521707d6e08e35
+modified: 1725461938379
+created: 1716588186648
+url: http://localhost:9000/2015-03-31/functions/function/invocations
+name: classifier_agent
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"Records": [
+    		{
+    			"messageId": "xxxx",
+    			"receiptHandle": "xxx",
+    			"body": "{\"Type\": \"Notification\",\"MessageId\": \"xxxxx\",\"TopicArn\": \"arn:aws:sns:us-east-1:XXXX:documents_inbound\",\"Subject\": \"Hash for Incoming Document\",\"Message\": \"{\\\"hash_content\\\": \\\"...\\\",\\\"collection_name\\\": \\\"{{ _.collection_name }}\\\",\\\"s3_file\\\": {\\\"bucket_name\\\": \\\"dev-dm-inbound-da9d3754-edd0-4f6b-9065-e4d90521fe16\\\",\\\"file_name\\\": \\\"{{ _.file_name }}\\\", \\\"is_scanned\\\": \\\"false\\\"},\\\"previous_step\\\": \\\"verify_content\\\"}\",\"Timestamp\": \"2024-05-09T02:36:23.920Z\",\"SignatureVersion\": \"1\",\"Signature\": \"sssss\",\"SigningCertURL\": \"https://sns.us-east-1.amazonaws.com/SimpleNotificationService-xxxxxxx.pem\",\"UnsubscribeURL\": \"https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:XXXXXX:documents_inbound:xxxxxx\"}",
+    			"attributes": {
+    				"ApproximateReceiveCount": "xx",
+    				"AWSTraceHeader": "Root=xxxx;Sampled=0;Lineage=f28b038b:0",
+    				"SentTimestamp": "xxxxx",
+    				"SenderId": "xxxxxx",
+    				"ApproximateFirstReceiveTimestamp": "1715222183951"
+    			},
+    			"messageAttributes": {},
+    			"md5OfBody": "xxxxx",
+    			"eventSource": "aws:sqs",
+    			"eventSourceARN": "arn:aws:sqs:us-east-1:XXXXX:",
+    			"awsRegion": "us-east-1"
+    		}
+    	]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1725461932238
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

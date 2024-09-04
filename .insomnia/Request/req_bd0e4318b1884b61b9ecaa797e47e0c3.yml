@@ -1,0 +1,132 @@
+_id: req_bd0e4318b1884b61b9ecaa797e47e0c3
+type: Request
+parentId: fld_dc363826fd4043d2bab823edccbb3f98
+modified: 1724788231826
+created: 1724099217015
+url: http://localhost:9000/send-message
+name: chatbot_with_history
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {"customer_name": "{{ _.customer_name }}",
+
+    "message": "{{ _.user_message }}",
+     "chat_history": [
+    	{
+    		"human_message" : "Me atualize sobre meus pedidos desse mês?",
+    		"chatbot_response" : "O sistema buscou todos os pedidos feitos por você no mês atual, ordenados pela data de atualização mais recente. Aqui estão os resultados:\n\n1. **Pedido Número:** 240892202\n   - **Status:** Carga Recebida\n   - **Data do Status:** 01/08/2024 13:29\n   - **Última Modificação:** 19/08/2024 14:15\n   - **Descrição da Atualização:** Recebemos a confirmação do armazém acerca do recebimento da carga.\n   - **Data da Atualização:** 01/08/2024 18:19\n\n2. **Pedido Número:** 240891677\n   - **Status:** Carga Recebida\n   - **Data do Status:** 01/08/2024 14:31\n   - **Última Modificação:** 15/08/2024 14:09\n   - **Descrição da Atualização:** Carga prevista para chegar ao armazém dia 31/07, quarta-feira, até o final do dia.\n   - **Data da Atualização:** 30/07/2024 15:25\n\n3. **Pedido Número:** 240891677\n   - **Status:** Carga Recebida\n   - **Data do Status:** 01/08/2024 14:31\n   - **Última Modificação:** 15/08/2024 14:09\n   - **Descrição da Atualização:** Data original alterada de 31/07/2024 18:00 para 01/08/2024 11:31.\n   - **Data da Atualização:** 01/08/2024 16:37\n\n4. **Pedido Número:** 240891677\n   - **Status:** Carga Recebida\n   - **Data do Status:** 01/08/2024 14:31\n   - **Última Modificação:** 15/08/2024 14:09\n   - **Descrição da Atualização:** Recebemos a confirmação do armazém acerca do recebimento da carga.\n   - **Data da Atualização:** 01/08/2024 16:43\n\n5. **Pedido Número:** 240892204\n   - **Status:** Carga Recebida\n   - **Data do Status:** 01/08/2024 15:45\n   - **Última Modificação:** 19/08/2024 14:15\n   - **Descrição da Atualização:** Recebemos a confirmação do armazém acerca do recebimento da carga.\n   - **Data da Atualização:** 05/08/2024 15:55\n\n6. **Pedido Número:** 240790783\n   - **Status:** Luz Verde para Enviar\n   - **Data do Status:** 01/08/2024 17:00\n   - **Última Modificação:** 08/08/2024 12:31\n   - **Descrição da Atualização:** Data original alterada de 02/08/2024 08:07 para 01/08/2024 14:00.\n   - **Data da Atualização:** 01/08/2024 16:57\n\n7. **Pedido Número:** 240790783\n   - **Status:** Luz Verde para Enviar\n   - **Data do Status:** 01/08/2024 17:00\n   - **Última Modificação:** 08/08/2024 12:31\n   - **Descrição da Atualização:** Data original alterada de 22/07/2024 08:08 para 02/08/2024 08:07.\n   - **Data da Atualização:** 22/07/2024 11:08\n\n8. **Pedido Número:** 240790783\n   - **Status:** Luz Verde para Enviar\n   - **Data do Status:** 01/08/2024 17:00\n   - **Última Modificação:** 08/08/2024 12:31\n   - **Descrição da Atualização:** Pedido removido da reserva 047-39839553.\n   - **Data da Atualização:** 29/07/2024 17:09\n\n9. **Pedido Número:** 240892203\n   - **Status:** Carga Recebida\n   - **Data do Status:** 01/08/2024 18:45\n   - **Última Modificação:** 19/08/2024 10:43\n   - **Descrição da Atualização:** Carga prevista para chegar ao armazém dia 01/08, quinta-feira, até o final do dia.\n   - **Data da Atualização:** 30/07/2024 14:25\n\n10. **Pedido Número:** 240892203\n    - **Status:** Carga Recebida\n    - **Data do Status:** 01/08/2024 18:45\n    - **Última Modificação:** 19/08/2024 10:43\n    - **Descrição da Atualização:** Data original alterada de 01/08/2024 18:00 para 01/08/2024 15:45.\n    - **Data da Atualização:** 02/08/2024 13:06\n\nEstes são os 10 primeiros pedidos do mês atual. Se precisar de mais informações ou de outros pedidos, por favor, me avise!",
+    		"query" : "SELECT order_number, stage, stage_time, stage_last_modified, update_description, update_description_date, customer FROM public.vw_chatbot_last_updates WHERE (date_trunc('month', stage_time) = date_trunc('month', current_date) ) AND customer = 'COLDMIX'ORDER BY stage_time ASC NULLS LAST LIMIT 10",
+    		"query_results": [
+    			{
+    				"customer": "COLDMIX",
+    				"order_number": "240892202",
+    				"stage": "Cargo Received",
+    				"stage_last_modified": "2024-08-19 14:15:27.892952+00:00",
+    				"stage_time": "2024-08-01 13:29:09+00:00",
+    				"update_description": "Recebemos a confirmação do armazém acerca do recebimento da carga",
+    				"update_description_date": "2024-08-01 18:19:10+00:00"
+    			},
+    			{
+    				"customer": "COLDMIX",
+    				"order_number": "240891677",
+    				"stage": "Cargo Received",
+    				"stage_last_modified": "2024-08-15 14:09:26.888598+00:00",
+    				"stage_time": "2024-08-01 14:31:00+00:00",
+    				"update_description": "Carga prevista para chegar ao armazém dia 31/07, quarta-feira, até o final do dia.\n",
+    				"update_description_date": "2024-07-30 15:25:26+00:00"
+    			},
+    			{
+    				"customer": "COLDMIX",
+    				"order_number": "240891677",
+    				"stage": "Cargo Received",
+    				"stage_last_modified": "2024-08-15 14:09:26.888598+00:00",
+    				"stage_time": "2024-08-01 14:31:00+00:00",
+    				"update_description": "Original Date Changed from 31/07/2024 18:00 to 01/08/2024 11:31",
+    				"update_description_date": "2024-08-01 16:37:30+00:00"
+    			},
+    			{
+    				"customer": "COLDMIX",
+    				"order_number": "240891677",
+    				"stage": "Cargo Received",
+    				"stage_last_modified": "2024-08-15 14:09:26.888598+00:00",
+    				"stage_time": "2024-08-01 14:31:00+00:00",
+    				"update_description": "Recebemos a confirmação do armazém acerca do recebimento da carga.\n",
+    				"update_description_date": "2024-08-01 16:43:15+00:00"
+    			},
+    			{
+    				"customer": "COLDMIX",
+    				"order_number": "240892204",
+    				"stage": "Cargo Received",
+    				"stage_last_modified": "2024-08-19 14:15:14.288927+00:00",
+    				"stage_time": "2024-08-01 15:45:04+00:00",
+    				"update_description": "Recebemos a confirmação do armazém acerca do recebimento da carga.\n",
+    				"update_description_date": "2024-08-05 15:55:57+00:00"
+    			},
+    			{
+    				"customer": "COLDMIX",
+    				"order_number": "240790783",
+    				"stage": "Green Light to Ship",
+    				"stage_last_modified": "2024-08-08 12:31:29.223522+00:00",
+    				"stage_time": "2024-08-01 17:00:00+00:00",
+    				"update_description": "Original Date Changed from 02/08/2024 08:07 to 01/08/2024 14:00",
+    				"update_description_date": "2024-08-01 16:57:10+00:00"
+    			},
+    			{
+    				"customer": "COLDMIX",
+    				"order_number": "240790783",
+    				"stage": "Green Light to Ship",
+    				"stage_last_modified": "2024-08-08 12:31:29.223522+00:00",
+    				"stage_time": "2024-08-01 17:00:00+00:00",
+    				"update_description": "Original Date Changed from 22/07/2024 08:08 to 02/08/2024 08:07",
+    				"update_description_date": "2024-07-22 11:08:12+00:00"
+    			},
+    			{
+    				"customer": "COLDMIX",
+    				"order_number": "240790783",
+    				"stage": "Green Light to Ship",
+    				"stage_last_modified": "2024-08-08 12:31:29.223522+00:00",
+    				"stage_time": "2024-08-01 17:00:00+00:00",
+    				"update_description": "Order removed of booking 047-39839553",
+    				"update_description_date": "2024-07-29 17:09:08+00:00"
+    			},
+    			{
+    				"customer": "COLDMIX",
+    				"order_number": "240892203",
+    				"stage": "Cargo Received",
+    				"stage_last_modified": "2024-08-19 10:43:10.431968+00:00",
+    				"stage_time": "2024-08-01 18:45:50+00:00",
+    				"update_description": "Carga prevista para chegar ao armazém dia 01/08, quinta-feira, até o final do dia.\n",
+    				"update_description_date": "2024-07-30 14:25:36+00:00"
+    			},
+    			{
+    				"customer": "COLDMIX",
+    				"order_number": "240892203",
+    				"stage": "Cargo Received",
+    				"stage_last_modified": "2024-08-19 10:43:10.431968+00:00",
+    				"stage_time": "2024-08-01 18:45:50+00:00",
+    				"update_description": "Original Date Changed from 01/08/2024 18:00 to 01/08/2024 15:45",
+    				"update_description_date": "2024-08-02 13:06:03+00:00"
+    			}
+    		]
+    	}
+    ]
+
+
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1724788214115
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

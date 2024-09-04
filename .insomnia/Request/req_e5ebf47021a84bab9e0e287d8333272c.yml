@@ -1,0 +1,23 @@
+_id: req_e5ebf47021a84bab9e0e287d8333272c
+type: Request
+parentId: fld_dc363826fd4043d2bab823edccbb3f98
+modified: 1725302605277
+created: 1723522881325
+url: http://localhost:9000
+name: chatbot_shema_api
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1724788214015
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

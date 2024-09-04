@@ -1,0 +1,48 @@
+_id: req_56ef559fb00748d9a22cf4cd34146581
+type: Request
+parentId: fld_7a9b6d88e67849a2b9521707d6e08e35
+modified: 1725461936263
+created: 1716997276238
+url: http://localhost:9000/2015-03-31/functions/function/invocations
+name: extractor_agent
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+      "Records": [
+        {
+          "messageId": "938726b1-09c2-4cfb-ac69-74acbae2ca7a",
+          "receiptHandle": "...",
+          "body": "{\"Type\": \"Notification\",\"MessageId\": \"xxxxx\",\"TopicArn\": \"arn:aws:sns:us-east-1:XXXX:documents_inbound\",\"Subject\": \"Hash for Incoming Document\",\"Message\": \"{\\\"hash_content\\\": \\\"teste_refactor\\\",\\\"collection_name\\\": \\\"{{ _.collection_name }}\\\", \\\"s3_file\\\": {\\\"bucket_name\\\": \\\"dev-dm-inbound-da9d3754-edd0-4f6b-9065-e4d90521fe16\\\",\\\"file_name\\\": \\\"{{ _.file_name }}\\\", \\\"is_scanned\\\": \\\"false\\\"}, \\\"previous_step\\\": \\\"classifier_agent\\\", \\\"doc_type\\\": \\\"invoice\\\", \\\"classifier_agent\\\": {\\\"result\\\": {\\\"page_num\\\":[1],\\\"type_file\\\": \\\"invoice\\\"}, \\\"open_ai_callback\\\": \\\"Tokens Used: 5715 Prompt Tokens: 5709 Completion Tokens: 6 Successful Requests: 1 Total Cost (USD): $0.0\\\"}}\",  \"Timestamp\" : \"2024-05-30T14:11:49.348Z\",  \"SignatureVersion\" : \"1\",  \"Signature\" : \"xxx\",  \"SigningCertURL\" : \"xxx\",  \"UnsubscribeURL\" : \"xxx\"}",
+          "attributes": {
+            "ApproximateReceiveCount": "1",
+            "AWSTraceHeader": "xxx",
+            "SentTimestamp": "1717078309374",
+            "SenderId": "AIDAIT2UOQQY3AUEKVGXU",
+            "ApproximateFirstReceiveTimestamp": "1717078309388"
+          },
+          "messageAttributes": {},
+          "md5OfBody": "840d956ef5a3c0f2ae9731dcea1394a2",
+          "eventSource": "aws:sqs",
+          "eventSourceARN": "arn:aws:sqs:us-east-1:xxx:dev-document-extractor",
+          "awsRegion": "us-east-1"
+        }
+      ]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1725461932138
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

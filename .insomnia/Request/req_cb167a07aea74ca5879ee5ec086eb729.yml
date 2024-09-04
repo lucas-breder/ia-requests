@@ -1,0 +1,48 @@
+_id: req_cb167a07aea74ca5879ee5ec086eb729
+type: Request
+parentId: fld_7a9b6d88e67849a2b9521707d6e08e35
+modified: 1725461934468
+created: 1717174872352
+url: http://localhost:9000/2015-03-31/functions/function/invocations
+name: reviewer_agent
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+        "Records": [
+            {
+                "messageId": "abf34cf3-a479-421d-8d65-af230a3b82fd",
+                "receiptHandle": "...",
+                "body": "{\n  \"Type\" : \"Notification\",\n  \"MessageId\" : \"8792d8e0-8fa8-535a-8b20-8633762a18ac\",\n  \"TopicArn\" : \"arn:aws:sns:us-east-1:xxx:dev-response-formatter\",\n  \"Subject\" : \"Message processed successfully: extractor_agent\",\n  \"Message\" : \"{\\\"hash_content\\\": \\\"...\\\", \\\"collection_name\\\": \\\"ae7bb7f7-4d88-47bb-9f14-2de399575744.pdf_transcriber_agent_teste_refactor_1718339856.8745897\\\", \\\"s3_file\\\": {\\\"bucket_name\\\": \\\"dev-dm-inbound-da9d3754-edd0-4f6b-9065-e4d90521fe16\\\",\\\"file_name\\\": \\\"ae7bb7f7-4d88-47bb-9f14-2de399575744.pdf\\\", \\\"is_scanned\\\": \\\"false\\\"}, \\\"previous_step\\\": \\\"extractor_agent\\\", \\\"classifier_agent\\\": {\\\"result\\\": {\\\"type_file\\\": \\\"invoice\\\"}, \\\"open_ai_callback\\\": \\\"Tokens Used: 5715 Prompt Tokens: 5709 Completion Tokens: 6 Successful Requests: 1 Total Cost (USD): $0.0\\\"}, \\\"extractor_agent\\\": {\\\"result\\\": {\\\"invoice_number\\\": \\\"1434\\\", \\\"delivery_address\\\": \\\"MICHELIN RIO DE JANEIRO (RES) Sociedade Michelin Part. Ind. e Com. Ltda. Rodovia Presidente Dutra. Km 316 \\\\u2013 Lado Itatiaia 27580-00 RIO DE JANEIRO, BRAZIL\\\", \\\"shipper_name\\\": \\\"HOLD CD\\\", \\\"shipper_address\\\": \\\"44 Chemin des Michallets, 38690 TORCHEFELON FRANCE\\\", \\\"shipper_contact\\\": \\\"Phone +33 6 88 14 67 99\\\", \\\"total_value\\\": \\\"546,00\\\", \\\"purchase_order\\\": \\\"7276\\\", \\\"currency\\\": \\\"\\\\u20ac\\\", \\\"freight\\\": \\\"N\\\\u00e3o Informado\\\", \\\"description\\\": \\\"HySol 3472 A&B Res\\\\u00edn Loctite A & B set of 500g\\\", \\\"weight_measurement_units\\\": \\\"kg\\\", \\\"length_measurement_units\\\": null, \\\"quantity_bought\\\": \\\"3\\\", \\\"quantity_shipped\\\": \\\"3\\\", \\\"discount\\\": \\\"N\\\\u00e3o Informado\\\", \\\"Manufacturer\\\": \\\"LOCTITE\\\", \\\"country_of_origin\\\": \\\"FRANCE\\\", \\\"country_of_provenance\\\": \\\"FRANCE\\\", \\\"country_of_acquisition\\\": \\\"BRAZIL\\\", \\\"payment_terms\\\": \\\"Documentary credit : Bank transfer\\\", \\\"banking_information\\\": null, \\\"gross_weight\\\": \\\"9,6\\\", \\\"net_weight\\\": \\\"1,500\\\", \\\"packaging\\\": \\\"Dimensions (cm) : 40x40x32\\\", \\\"others\\\": \\\"Notify Party: Sociedade Michelin Part. Ind. e Com. Ltda. Av. das Am\\\\u00e9ricas, 700 - Bloco 4 - Barra da Tijuca Rio de Janeiro, Brasil CEP 22640-100 CNPJ 50.567.288/0001-59 DMS TEAM:0055 21 3621-4677 monitoring.importacao@dmslog.com Importer code: Documentary credit: Bank transfer Date of Contract: 27/03/2023 Invoice Date: 06/04/2023 Payment Date: 05/06/2023\\\", \\\"billing_address\\\": \\\"MICHELIN RIO DE JANEIRO (RES) Sociedade Michelin Part. Ind. e Com. Ltda. Rodovia Presidente Dutra. Km 316 \\\\u2013 Lado Itatiaia 27580-00 RIO DE JANEIRO, BRAZIL\\\", \\\"incoterm\\\": \\\"FCA ST-PRIEST DUTY UNPAID\\\", \\\"is_signed\\\": true, \\\"signature_color\\\": \\\"Red\\\", \\\"is_stamped\\\": true, \\\"stamp_color\\\": \\\"Red\\\", \\\"items\\\": [{\\\"unit_price\\\": \\\"182,00\\\", \\\"description\\\": \\\"HySol 3472 A&B Res\\\\u00edn Loctite A & B set of 500g\\\", \\\"item_total_price\\\": \\\"546,00\\\", \\\"unit_weight\\\": \\\"0.5 kg\\\", \\\"item_number\\\": \\\"1\\\", \\\"pieces\\\": \\\"3\\\"}]}, \\\"open_ai_callback\\\": \\\"Tokens Used: 3962\\\\n\\\\tPrompt Tokens: 3429\\\\n\\\\tCompletion Tokens: 533\\\\nSuccessful Requests: 1\\\\nTotal Cost (USD): $0.0\\\"}}\",\n  \"Timestamp\" : \"2024-05-31T16:13:54.012Z\",\n  \"SignatureVersion\" : \"1\",\n  \"Signature\" : \"...\",\n  \"SigningCertURL\" : \"...\",\n  \"UnsubscribeURL\" : \"...\"\n}",
+                "attributes": {
+                    "ApproximateReceiveCount": "1",
+                    "AWSTraceHeader": "Root=1-6659f728-4ffa390414a0236861124198;Parent=109daf623627813a;Sampled=0;Lineage=1512c6b8:0",
+                    "SentTimestamp": "1717172034052",
+                    "SenderId": "AIDAIT2UOQQY3AUEKVGXU",
+                    "ApproximateFirstReceiveTimestamp": "1717172034066"
+                },
+                "messageAttributes": {},
+                "md5OfBody": "0b070a0035408fd4bf430e95b5439926",
+                "eventSource": "aws:sqs",
+                "eventSourceARN": "arn:aws:sqs:us-east-1:xxx:dev-response-formatter",
+                "awsRegion": "us-east-1"
+            }
+        ]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1725461932038
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

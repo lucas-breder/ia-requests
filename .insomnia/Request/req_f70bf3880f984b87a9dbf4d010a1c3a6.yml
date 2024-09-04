@@ -1,0 +1,32 @@
+_id: req_f70bf3880f984b87a9dbf4d010a1c3a6
+type: Request
+parentId: fld_dc363826fd4043d2bab823edccbb3f98
+modified: 1724808196976
+created: 1724782576501
+url: http://localhost:9000/vector-instructions
+name: post_embed_instructions
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {"key": "teste",
+    "content": "teste",
+    "agent_names": ["a"],
+     "type": "teste"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1724788214065
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,36 @@
+_id: req_990a9d092cff40ba939e72ee36270efe
+type: Request
+parentId: fld_dc363826fd4043d2bab823edccbb3f98
+modified: 1725375186028
+created: 1723526608414
+url: http://localhost:9000/2015-03-31/functions/function/invocations
+name: chat_lambda_history
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+      "Records": [
+    {"body": "{\"Subject\": \"Chatbot Message\", \"Message\": \"{\\\"customer\\\": \\\"Wehner\\\", \\\"body\\\": \\\"Na vdd eu qeuria era consignatário\\\", \\\"chat_history\\\": [{\\\"human_message\\\": \\\"Com qual fornecedor eu mais trabalho?\\\"}, {\\\"is_valid\\\": \\\"True\\\", \\\"query\\\": \\\"SELECT shipper, COUNT(*) AS shipment_count FROM mocked_data.vw_care_order  WHERE customer = 'Wehner' GROUP BY shipper ORDER BY shipment_count DESC NULLS LAST LIMIT 10\\\", \\\"query_result\\\": [{\\\"shipper\\\": \\\"Kohler\\\", \\\"shipment_count\\\": \\\"18\\\"}, {\\\"shipper\\\": \\\"Becker-Konopelsk\\\", \\\"shipment_count\\\": \\\"16\\\"}, {\\\"shipper\\\": \\\"Bruen and Hamill\\\", \\\"shipment_count\\\": \\\"16\\\"}, {\\\"shipper\\\": \\\"Wisozk\\\", \\\"shipment_count\\\": \\\"15\\\"}, {\\\"shipper\\\": \\\"Rau-Hills\\\", \\\"shipment_count\\\": \\\"14\\\"}, {\\\"shipper\\\": \\\"Maggio and Sons\\\", \\\"shipment_count\\\": \\\"12\\\"}, {\\\"shipper\\\": \\\"Aufderhar-Veum\\\", \\\"shipment_count\\\": \\\"12\\\"}, {\\\"shipper\\\": \\\"Daugherty and Heaney\\\", \\\"shipment_count\\\": \\\"12\\\"}], \\\"chatbot_response\\\": \\\"The query looked through your shipment records to find out which suppliers you have worked with the most. It counted the number of shipments for each supplier and sorted them to show you the ones you work with the most.\\\\n\\\\nHere are the suppliers you work with the most:\\\\n\\\\n1. Kohler (18 shipments)\\\\n2. Becker-Konopelsk (16 shipments)\\\\n3. Bruen and Hamill (16 shipments)\\\\n4. Wisozk (15 shipments)\\\\n5. Rau-Hills (14 shipments)\\\\n6. Maggio and Sons (12 shipments)\\\\n7. Aufderhar-Veum (12 shipments)\\\\n8. Daugherty and Heaney (12 shipments)\\\\n\\\\nKohler is the supplier you work with the most, with a total of 18 shipments.\\\"}]}\"}"}
+      ]
+    }
+parameters:
+  - id: pair_2f9d983b6f79463a9b489bde146cd9cb
+    name: ""
+    value: ""
+    description: ""
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1724788214265
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

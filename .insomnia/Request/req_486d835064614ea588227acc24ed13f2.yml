@@ -1,0 +1,23 @@
+_id: req_486d835064614ea588227acc24ed13f2
+type: Request
+parentId: fld_dc363826fd4043d2bab823edccbb3f98
+modified: 1724854833252
+created: 1724787007421
+url: http://localhost:9000/vector-instructions/9f11a80c-3b8e-4da4-80f9-db2094a8c13e
+name: delete_embed_instructions
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1724788214027.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

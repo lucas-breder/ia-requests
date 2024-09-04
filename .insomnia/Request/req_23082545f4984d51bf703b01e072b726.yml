@@ -1,0 +1,27 @@
+_id: req_23082545f4984d51bf703b01e072b726
+type: Request
+parentId: fld_dc363826fd4043d2bab823edccbb3f98
+modified: 1725370866170
+created: 1724786960149
+url: http://localhost:9000/vector-instructions
+name: get_embed_instructions
+description: ""
+method: GET
+body: {}
+parameters:
+  - id: pair_db7a133da7d345c28800c9ac551b48d0
+    name: search
+    value: "'em andamento'"
+    description: ""
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1724788214040
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
